@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* formats everything*/
+*{
+
+}
+
+/*simnple formats , ids, classes, bracket names*/
+#thing{
+
+}
+
+.classThings{
+
+}
+
+p{
+
+}
+
+/* using multiple names seperated by commas can create groups*/ 
+
+p,div,h2{
+
+}
+
+/*using parent selectors can also work*/
+/*takes all p tags inside the div no matter the parent*/
+
+div p {
+
+}
+
+/* child selectors*/
+/* only gets the direct p tag under the div*/
+div > p {
+
+}
+
+/* adjecent + is pretty much the same*/
+div + p {
+
+}
+/* selects sibling elements*/
+div ~ p {
+
+}
+
+a:link{
+    color: black;
+}
+a:visited{
+    color: purple;
+}
+a:active{
+    color: black;
+}
+a:hover{
+    color: blue;
+}
+/*first child is the first child of any block element - so this would be the first child p tag to any block element would be changed to blue*/
+p:first-child{
+    color: blue
+}
+/*inserts content after a tag*/
+a::after{
+    content:"These are extra words"
+}
+/*does the same thing as ::after except before*/
+a::before{
+    content:"these are prior words"
+}
+
+body{
+    background-color: peachpuff;
+    background-image: url(images/6245906-wings-manga-black-demon-girl-rezi-anime-dark-pink.jpg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-y: top;
+    background-position-x: center;
+}
+
+.p1{
+    font-family: ""/*insert fonts here*/;
+    font-weight: bold;
+}
+
