@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+h1{
+    color:#3AAFA9
+}
+.hide{
+    display:none;
+}
+
+h2{
+    font-size:16px;
+    color:whitesmoke;
+}
+
+body{
+    background-color: #17252A
+}
+.pics{
+    max-height: 250px;
+    padding-left:200px;
+}
+li{
+    color: #3AAFA9;
+}
+
+a:link{
+    color: black;
+}
+a:visited{
+    color: blueviolet;
+}
+a:hover{
+    color: blue;
+}
+
+#nav{
+    border-bottom: 3px;
+    border-top: 3px;
+    border-left: 0px;
+    border-right:0px;
+    border-style: solid;
+    border-color: #2B7A78;
+    padding: 5px;
+}
