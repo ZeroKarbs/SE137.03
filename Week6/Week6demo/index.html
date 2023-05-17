@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Tristen J Hum">
+    <meta name="Description" content="Week 6 DEMO">
+    <title>Week 6 DEMO</title>
+
+<style>
+    a{
+        display: inline-block;
+        width:100px;
+        height:30px;
+        background-color: black;
+        margin-right: 10px;
+    }
+</style>
+
+</head>
+
+
+<body>
+    <nav>
+        <a href="#">Tab 1</a>
+        <a href="#">Tab 2</a>
+    </nav>
+        <p>breadcrumb >> Tab 1</p>
+    <script>
+
+        var a =document.querySelectorAll(`nav a`);
+        var p = document.querySelector(`p`);
+
+
+
+        for(let i=0;i<a.length; i++)
+        {
+            a[i].addEventListener(`click`, e=>{
+                e.preventDefault();
+                for(let i=0; i<a.length; i++)
+                {
+                    a[i].style.backgroundColor = `#333`
+                }
+                e.target.style.backgroundColor = `black`
+
+                p.innerHTML = `breadcrumbs >> ${e.target.innerHTML}`;
+            })
+        }
+    </script>
+    
+
+
+
+</body>
+</html>

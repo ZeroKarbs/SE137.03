@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body{
+    background-color: aqua;
+}
+@media(orientation:portrait)
+{
+    body{
+        background-color: brown;
+    }
+}
+
+@media (max-width:1500px)
+{
+    body{
+        background-color: brown;
+    }
+}
+

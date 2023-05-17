@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Tristen J Hum">
+    <meta name="description" content= "Week 6 Assignment">
+    <title>Week 6 Assignment</title>
+    <link rel="stylesheet" href="week6ass.css">
+    <link rel="stylesheet" href="Roboto-Black.ttf">
+
+</head>
+<body>
+    <main>
+        <header>
+            <div class="head_menu text">
+                <p class="pfiles">Files</p>
+                <p class="pedit">Edit</p>
+                <p>Help</p>
+            </div>
+
+            <p id = "head_title" class="text">Week 6 Assignment</p>
+            <img src="images/sprocket.png" alt="error loading image" id="setting_button">
+
+
+        </header>
+        <section>
+            <aside>
+                
+                <center><div><img src="images/tray.png" alt="tray image" id="toggle">
+                <img src="images/tiles.png" alt="tiles image" class="tiles">
+                </div></center>
+                <img src="images/trash.png" alt="error" class="trash">
+                        
+            </aside>
+            <div class="tray">
+                <div id="inner-tray">
+                    <!--<div id ="files" class="text"><img src = "images/down_arrow.png" class="arrow">Files</div></!-->
+                    <details id="file_list" class="dark_text">
+                    <summary id="files" class="text">Files</summary>
+                        <ul id = "list_file" class="dark_text">
+                            <li class = "paper"> File 1</li>
+                            <li class = "paper"> File 1</li>
+                            <li class = "paper"> File 1</li>
+                            <li class = "paper"> File 1</li>
+                        </ul>
+                    </details>
+                    
+                    <details class="other">
+                    <summary id="other_stuff" class ="text"> Other Stuff</summary>
+                    <ul id="list_other" class="dark_text">
+                        <li class = "fire">Stuff 1</li>
+                        <li class = "fire">Stuff 2</li>
+                    </ul>
+                    </details>
+                </div>
+            </div>
+            <div id="editor">
+                <nav>
+                    <div id="tab">
+                        <a href="#" class = "tab_color"> Tab 1</a>
+                    </div>
+                    <div id="tab">
+                        <a href="#" class = "tab_color">Tab 2</a>
+                    </div>
+                    <div id="tab">
+                        <div id="plane"></div>
+                        <a href="#" class = "tab_color">Tab 3</a>
+                    </div>
+                    
+                </nav>
+                <p class="text link">
+                </p>
+                <textarea>
+                </textarea>
+            </div>
+        </section>
+        <footer></footer>
+    </main>
+
+
+    <script>
+        var toggle = document.querySelector(`#toggle`)
+        var tray = document.querySelector(`.tray`)
+        tray.classList.toggle(`closed`)
+        var tabs = Array.from(document.querySelectorAll(`nav a`))
+        var p = document.querySelector(`#editor p`)
+
+        toggle.addEventListener(`click`, (e)=>{
+            e.preventDefault();
+            tray.classList.toggle(`closed`)
+        })
+
+        for(let i=0; i<tabs.length; i++)
+        {
+            tabs[i].addEventListener(`click`, selectTab)
+        }
+
+        function selectTab(e)
+        {
+            for(let i=0; i<tabs.length; i++)
+            {
+                tabs[i].style.backgroundColor =`#373737`
+            }
+            e.target.style.backgroundColor=`#161616`
+            p.innerHTML =  `<a href=#>SE137</a> >
+                            <a href=#>W6</a> >
+                            <a href=#>Homework</a> >
+                            <a href=#>Tab ${tabs.indexOf(e.target)+1}</a>`
+        }
+        selectTab([1])
+
+
+    </script>
+
+
+
+
+</body>
+</html>

@@ -8,11 +8,10 @@ html{
 }
 
 body{ 
-    min-height: 100%;
-    width: 1820px;
     background-color: #282828;
     margin:0;
 }
+
 
 #main{
     display: grid;
@@ -32,19 +31,19 @@ header{
     width: 1820px;
 }
 
-#youtube{
+#yt{
     width: 60px;
     height: 60px;
     margin: 21px 0 19px 0;
 }
 
-#snapchat{
+#snap{
     width: 60px;
     height: 60px;
     margin: 21px 12px 19px 13px;
 }
 
-#twitter{
+#twit{
     height: 69px;
     width: 69px;
     margin: 16px 41px 15px 0;
@@ -235,3 +234,4 @@ footer p{
     margin: 21px 0 22px 30px;
     width:200px;
 }
+

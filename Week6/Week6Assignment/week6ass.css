@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+*{
+    box-sizing: border-box;
+}
+html, body{
+    height:100%;
+    margin:0;
+    background-color: black;
+}
+main{
+    height:100%;
+    display:flex;
+    flex-direction: column;
+   
+}
+
+header{
+    height:23px;
+    background-color: #505050;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+section{
+    display:flex;
+    height:100%;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    width:45px;
+    background-color:#505050;
+    align-items: center;
+    justify-content:space-between ;
+}
+
+
+footer{
+    padding:10px;
+    background-color: #0254A0;
+}
+#editor{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+
+}
+nav a{
+    display:flex;
+    width:173px;
+    height:34px;
+    flex-direction: row;
+    float:left;
+    margin-right:2px;
+    text-decoration: none;
+    align-items: center;
+    
+}
+
+
+textarea{
+    width:100%;
+    height:100%;
+    border-width: 0;
+    resize:none;
+    outline:none;
+    background-color:black;
+}
+.link{
+    background-color:#161616;
+    margin:0;
+}
+
+ #inner-tray{
+    width:144px;
+    background-color: #373737;
+}
+
+.tray{
+    
+    width:144px;
+    display:flex;
+    justify-content: flex-start;
+    overflow:hidden;
+    transition:all .5s;
+}
+
+.closed{
+    width:0px;
+    transition:all .5s;
+}
+.text{
+    color: white;
+    font-family: inherit;
+}
+.dark_text{
+    color: #E3E3E3;
+}
+a{
+    color: white;
+    
+}
+
+#files{
+    border-top:solid 1px;
+    border-color: white;
+    padding-bottom: 6px;
+    padding-left: 5px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+#list_file{
+    list-style-image: url("images/paper\ \(1\).png");
+}
+
+#list_other{
+    list-style-image: url("images/fire.png");
+}
+
+
+
+#other_stuff{
+    border-top:solid 1px;
+    border-color: white;
+    border-bottom: solid 1px;
+    padding-left: 5px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+
+
+
+.tab_color{
+    
+    color: #C2C2C2;
+}
+.arrow{
+    padding-right: 4.5px;
+}
+
+details>summary::-webkit-details-marker {
+   display: block;
+  }
+
+
+details[open] >summary#files{
+    border-bottom: solid 1px;
+    
+}
+details.other > summary::-webkit-details-marker{
+    display: block;
+}
+
+
+.fire{
+    padding-bottom: 6px;
+}
+
+.paper{
+    padding: 6px;
+}
+
+#toggle{
+    padding-bottom: 16px;
+    padding-top: 9px;
+    
+}
+.trash{
+    max-width: 26px;
+}
+
+
+.head_menu{
+    margin-left:45px;
+    display: flex;
+    flex-direction: row;
+}
+
+.head_menu > p.pfiles{
+    padding-right: 16px;
+}
+.head_menu > p.pedit{
+    padding-right:16px;
+}
+header > #head_title{
+    padding-right: 10%;
+}
+#tab{
+    background-image: url("images/new_plane.png");
+
+}
