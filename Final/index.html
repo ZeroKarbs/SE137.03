@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Tristen J Hum">
+    <meta name="description" content="Final_CSS">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tristen Hum CSS Final</title>
+    <link rel="stylesheet" href="bootstrap.css">
+ 
+</head>
+<body>
+    <div class="column">
+        <!-- ***** Header / links-->
+        <div id = "header-"> <!-- Header- is a flex box that will keep the two divs at each end-->
+            <div class="FlexToRow">  <!-- easy class system to flex anything to a row. this div is for the left side-->
+                <a href="index.html"><img src="images/nolaws.gif" alt="no laws when ur drinking claws gif" class = "nolaws"></a>
+                <header><h1>Hum |</h1></header>
+                <h3 class="head-h3">Future Software Engineer</h3>
+            </div>
+            
+            <!-- Div class for the dropdown menu-->
+            <div class="tray">
+                <nav>
+                    <ul>
+                        <li><a href = "#">HomePage</a></li>
+                        <li><a href="#">Featured Project</a></li>
+                        <li><a href="#">Projects</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- dropdown menu button-->
+            <img src="images/image 3.png" alt="ur mom" id="toggle">
+            
+            <div class="head-links"><!-- this div is for links on the right side-->
+                <div id="nav" class="FlexToRow">
+                    
+                    <a href="#">Home Page</a>
+                    &nbsp;
+                    <p>|</p>
+                    &nbsp;
+                    <a href="#">Featured Project </a>
+                    &nbsp;
+                    <p>|</p>
+                    &nbsp;
+                    <a href="#">Projects</a>
+                </div>
+            </div>
+        </div>
+    
+
+    <!--************* beginning of main HTML Pages*********-->
+        <!-- This will be separated into 3 different div's. Each will represent one of the pages needed. Just like with the bio page-->
+        <main>
+            
+            <!-- HOMEPAGE-->
+            <div id = "homepage" class="content">
+                
+                <!-- BIO HOMEPAGE-->
+                <div class="FlexToRow">
+                    <div class="bio">
+                        <h2>Hi! I'm Tristen Hum</h2>
+                        <p class="intro shadow">I am a current student at NEIT studying software engineering. I've been coding since the 8th grade, my mom says I speak to computers better than humans. In the past year I've been given the tools to fine tune my Python and HTML skills. On top of that I've learned C#, SQL and CSS. </p>
+                    </div>
+                    <img src="images/portfoliopicpp.jpg" alt="ur mom" class="me">
+                    
+                    <!-- REPOS HOMEPAGE-->
+                    <div class="repos">
+                        <h2>My Repos</h2>
+                            <div id = "links"class="column shadow">
+                                <a href="https://github.com/ZeroKarbs/SE137.03" target="blank" alt="ur mom"><img src="images/github.png"  class='git'> SE137.03 CSS</a>
+                                <a href="https://github.com/ZeroKarbs/se111_202320" target="blank" alt="ur mom"><img src="images/github.png" class="git">SE111 HTML & JavaScript</a>
+                            </div>        
+                    </div>     
+                </div><!-- end of first flex-->
+                    
+                    <br>
+                <div class="FlexToRow">
+                    <div id = "contact">
+                        <h2>Contact Me</h2>
+                        <div id="links" class="shadow">
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="blank"><img src="images/Instagram-Icon.png" alt="your mom" class ="git"></a>
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="blank"><img src="images/linked.png" alt="your mom" class ="git"></a>
+                        </div>
+                    </div>
+                    
+                        <img src="images/pokemon.png" alt="your mom" class=" poke1 shadow">
+                        <div>
+                            <h2>Featured Project</h2>
+                            <div class="shadow">
+                                <p class="intro"><i>Pokemon Text Based A Totally Original Game,&nbsp;</i>2022</p>
+                                <ul class="intro">
+                                <li>This game is a text based Pokemon game built in python. It allows the user to journey up to the first gym just like in the originals. Although it is not complete and still has plenty of bugs.</li>
+                                </ul>
+                                <a href="https://replit.com/@Pink0nWednesday/FinalTristenHum?v=1" target="blank" class="intro">Play Here</a>
+                            </div>
+                            
+                        </div>
+                    
+
+                </div>
+                
+            </div>
+            <br>
+            <div id = "featuredproject" class="content hide">
+                <center><h2>Pokemon Text Based A Totally Original Game</h2></center>
+                <div class="pics shadow">
+                    <img src="images/poke1.png" alt="your mom" class="poke">
+                    <img src="images/poke2.png" alt="your mom" class="poke">
+                    <img src="images/poke3.png" alt="your mom" class="poke">
+                </div>
+                <br>
+                <div id="ft-bottom-row" class="FlexToRow">
+                    <div class="info-poke">
+                        <h2>Gotta Catch 'Em All</h2>
+                        <div class="shadow">
+                            <p class = "wrap"><i>Pokemon Text Based A Totally Original Game,&nbsp;</i>2022 <br>Pokemon Text Based A Totally Original Game was my final for Intro to Python. I have always loved Pokemon Games and this was a fun little game that also got me into the work I was doing for class. In this game you start off like any pokemon game does, you pick your starter, battle your rival and head out on your own. After leaving your town you are able to go to 4 areas. The Wild and battle rng trainers or battle rng pokemon which you can catch. The Pokemon Center to heal your Pokemon. The Pokemart to buy Potions and Pokeballs. And lastly the Pokemon Gym. Which you must be level 10 to enter.</p>
+                        
+                        </div>
+
+                    </div>
+                    <div class="start-journey">
+                        <h2>Start Your Journey Here</h2>
+                        <div class="shadow">
+                            <a href="https://replit.com/@Pink0nWednesday/FinalTristenHum?v=1" target="blank"><img src="images/UltraBallArt.webp" alt="ur mom" class="git">&nbsp;Venture Into The World Of Pokemon</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <br>
+            <div id = "projects" class="content hide">
+                <div class="row1 FlexToRow">
+                    <div class ="thumbnail column shadow">
+                        <h2>Week 1: Bio</h2>
+                        <center><img src="images/week1pic.png" alt="ur mom" class="thumb"></center>
+                        <p class="wrap"><i>Week 1: CSS Bio,&nbsp;</i>2022</p>
+                        <a href="https://github.com/ZeroKarbs/SE137.03/tree/main/Week_1" target="blank">Week 1 Bio: Github</a>
+                        <a href="https://tristen-hum-se137-repository.netlify.app/week_1/" target="blank">Week 1 Link: Site</a>
+                    </div>
+                    <div class ="thumbnail column shadow">
+                        <h2>Week 2: Bio</h2>
+                        <center><img src="images/week2pic.png" alt="ur mom" class="thumb"></center>
+                        <p class="wrap"></p>
+                        <a href="https://github.com/ZeroKarbs/SE137.03/tree/main/Week_2" target="blank">Week 2: Bio Github</a>
+                        <a href="https://tristen-hum-se137-repository.netlify.app/week_2/" target="blank">Week 2: Bio Site</a>
+                    </div>
+                    <div class ="thumbnail column shadow">
+                        <h2>Week 3: Bio</h2>
+                        <center><img src="images/week3pic.png" alt="ur mom" class="thumb"></center>
+                        <p class="wrap"></p>
+                        <a href="https://github.com/ZeroKarbs/SE137.03/tree/main/Week_3_Figma_Bio" target="blank">Week 3: Bio Github</a>
+                        <a href="https://tristen-hum-se137-repository.netlify.app/week_3_figma_bio/" target="blank">Week 3: Bio Site</a>
+                        
+                        
+                    </div>
+
+                </div>
+                <br>
+                <div class= "row2 FlexToRow">
+                    <div class ="thumbnail column shadow">
+                        <h2>Week 5: Crystal Lake</h2>
+                        <center><img src="images/week5pic.png" alt="ur mom" class="thumb"></center>
+                        <p class="wrap"></p>
+                        <a href="https://github.com/ZeroKarbs/SE137.03/tree/main/Week_5" target="blank">Week 5: Camp Crystal Lake Github</a>
+                        <a href="https://tristen-hum-se137-repository.netlify.app/week_5/" target="blank">Week 5: Camp Crystal Lake Site</a>
+                        
+                    </div>
+                    <div class ="thumbnail column shadow">
+                        <h2>Week 6: Intro to Details & Slider Menu's</h2>
+                        <center><img src="images/week6pic.png" alt="ur mom" class="thumb"></center>
+                        <p class="wrap"></p>
+                        <a href="https://github.com/ZeroKarbs/SE137.03/tree/main/w6" target="blank">Week 6: Github</a>
+                        <a href="https://tristen-hum-se137-repository.netlify.app/week6/week6assignment/" target="blank">Week 6: Site</a>
+                    </div>
+                    <div class ="thumbnail column shadow">
+                        <h2>Week 7: Responsive Stat Page</h2>
+                        <center><img src="images/week7pic.png" alt="ur mom" class="thumb"></center>
+                        <p class="wrap"></p>
+                        <a href="https://github.com/ZeroKarbs/SE137.03/tree/main/Week7" target="blank">Week 7:  Github</a>
+                        <a href="https://tristen-hum-se137-repository.netlify.app/week7/stats/" target="blank">Week 7:  Site</a>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </main>
+    </div>
+    <footer class="row">
+        <p class="copyright">Tristen J Hum &copy;</p>
+        <a href="https://www.figma.com/file/5U0mzhFjRIGd7abyRk1nk0/Final?type=design&node-id=0%3A1&t=MIV2aK8KSYfpWu1V-1" target="blank" class="figmalink">My Figma</a>
+    </footer>
+
+    <script>
+        var toggle = document.querySelector(`#toggle`)
+        var tray = document.querySelector(`.tray`)
+        tray.classList.toggle(`closed`)
+
+        toggle.addEventListener(`click`, (e)=>{
+            e.preventDefault();
+            tray.classList.toggle(`closed`)
+        })            
+        
+        var a =document.querySelectorAll(`nav a`)
+        for(let i=0; i<a.length; i++)
+        { 
+            a[i].addEventListener(`click`,function(e){
+                e.preventDefault();
+                
+                var div = document.querySelectorAll(`.content`)
+                
+                for(let i=0; i<div.length; i++)
+                {
+                div[i].classList.add(`hide`);
+                
+                }
+                div[i].classList.remove(`hide`)
+            })
+        }
+        var a =document.querySelectorAll(`#nav a`)
+        for(let i=0; i<a.length; i++)
+        { 
+            a[i].addEventListener(`click`,function(e){
+                e.preventDefault();
+                
+                var div = document.querySelectorAll(`.content`)
+                
+                for(let i=0; i<div.length; i++)
+                {
+                div[i].classList.add(`hide`);
+                
+                }
+                div[i].classList.remove(`hide`)
+            })
+        }
+
+    </script>
+</body>
+</html>
